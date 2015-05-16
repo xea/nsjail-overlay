@@ -1,0 +1,15 @@
+<repositories version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name><![CDATA[nsjail]]></name>
+		<description lang="en"><![CDATA[Overlay for NSJail]]></description>
+		<homepage>https://github.com/xea/nsjail-overlay</homepage>
+		<owner type="person">
+			<email>alex.pecsi@gmail.com</email>
+			<name><![CDATA[xea]]></name>
+		</owner>
+		<source type="git">git://github.com/xea/nsjail-overlay.git</source>
+		<source type="git">https://github.com/xea/nsjail-overlay.git</source>
+		<source type="git">git@github.com:xea/nsjail-overlay.git</source>
+		<feed>https://github.com/xea/nsjail-overlay/commits/master.atom</feed>
+	</repo>
+</repositories>
