@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit git-2
+inherit cmake-utils git-2
 
 DESCRIPTION="Execute tasks in a namespaces-enabled chroot environment, similarly to containers or BSD jail"
 HOMEPAGE="http://github.com/xea/nsjail"
@@ -19,7 +19,15 @@ IUSE=""
 DEPEND="dev-libs/libconfig"
 RDEPEND="${DEPEND}"
 
+src_configure() {
+	cmake-utils_src_configure
+}
+
+src_compile() {
+	cmake-utils_src_compile
+}
 
 src_instrall() {
+	cmake-utils_src_install
 	dobin nsjail
 }
