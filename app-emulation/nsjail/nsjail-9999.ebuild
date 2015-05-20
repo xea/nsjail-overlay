@@ -30,4 +30,5 @@ src_compile() {
 src_instrall() {
 	cmake-utils_src_install
 	dobin nsjail
+	dosbin nsjaild
 }
