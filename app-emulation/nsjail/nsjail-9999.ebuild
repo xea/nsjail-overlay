@@ -8,7 +8,7 @@ inherit git-2
 
 DESCRIPTION="Execute tasks in a namespaces-enabled chroot environment, similarly to containers or BSD jail"
 HOMEPAGE="http://github.com/xea/nsjail"
-EGIT_REPO_URI="git://github.com/xea/njail http://github.com/xea/nsjail"
+EGIT_REPO_URI="git://github.com/xea/njail http://github.com/xea/nsjail.git"
 SRC_URI=""
 
 LICENSE="GPL"
