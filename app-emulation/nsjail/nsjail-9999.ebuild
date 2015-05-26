@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 IUSE=""
 
-DEPEND="dev-libs/libconfig"
+DEPEND="dev-libs/libconfig sys-apps/iproute2"
 RDEPEND="${DEPEND}"
 
 src_configure() {
@@ -30,5 +30,4 @@ src_compile() {
 src_instrall() {
 	cmake-utils_src_install
 	dobin nsjail
-	dosbin nsjaild
 }
