@@ -27,7 +27,7 @@ src_compile() {
 	cmake-utils_src_compile
 }
 
-src_instrall() {
+src_install() {
 	cmake-utils_src_install
 	dobin nsjail
 }
