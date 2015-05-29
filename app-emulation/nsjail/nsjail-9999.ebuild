@@ -29,5 +29,8 @@ src_compile() {
 
 src_install() {
 	cmake-utils_src_install
-	dobin nsjail
+	dodir /etc/nsjail
+	keepdir /etc/nsjail
+	exeinto /etc/nsjail
+	doexe conf/nsjail.example.conf
 }
